@@ -10,7 +10,29 @@
 </head>
 
 <body>
-    <a class="under" href="dangky.php"> Trở lại</a>
+    <a class="under" href="dangky.php"> Trở lại</a> <?php
+$fullname = $_POST['fullname'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+$repassword = $_POST['repassword'];
+$sex = $_POST['gender'];
+$date = $_POST['date'];
+$address = $_POST['address'];
+$avartar = $_POST['avartar'];
+$hobby = $_POST['hobby'];
+
+echo 'Full name: ' . $fullname . '<br>';
+echo 'Username: ' . $username . '<br>';
+echo 'Password: ' . $password . '<br>';
+echo 'Repassword: ' . $repassword . '<br>';
+echo 'Giới tính: ' . $sex . '<br>';
+echo 'Ngày sinh: ' . $date . '<br>';
+echo 'Địa chỉ: ' . $address . '<br>';
+echo 'Avatar: ' . $avartar . '<br>';
+echo 'Sở thích: ' . '<br>';
+var_dump($hobby)
+
+?>
 </body>
 
 </html>

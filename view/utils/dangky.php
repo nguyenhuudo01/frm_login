@@ -11,7 +11,7 @@
 
 <body>
     <form action="ketqua.php" method="post" enctype="multipart/form-data">
-        <table border="1" cellpadding="5" cellspacing="0" align="center" bordercolor="brown">
+        <table border="1" cellpadding="5" cellspacing="0" align="center">
             <tr>
                 <td colspan="2" align="center">
                     <b>Đăng Ký</b>
@@ -52,9 +52,9 @@
                     <label for="sex">Giới tính</label>
                 </td>
                 <td>
-                    <input type="radio" name="gender" id="male" value="male">
+                    <input type="radio" name="gender" value="Nam">
                     <label for="male">Nam</label>
-                    <input type="radio" name="gender" id="female" value="female">
+                    <input type="radio" name="gender" value="Nữ">
                     <label for="female">Nữ</label>
                 </td>
             </tr>
@@ -79,17 +79,17 @@
                     <label for="avartar">Avartar</label>
                 </td>
                 <td>
-                    <input type="file" name="file" id="avartar">
+                    <input type="file" name="avartar">
                 </td>
             </tr>
             <tr>
                 <td><label for="hobby">Sở thích</label></td>
                 <td>
-                    <input type="checkbox" name="hobby" id="movie" value="movie">
+                    <input type="checkbox" name="hobby[]" id="movie" value="Xem Phim">
                     <label for="movie">Xem Phim</label>
-                    <input type="checkbox" name="hobby" id="sport" value="sport">
+                    <input type="checkbox" name="hobby[]" id="sport" value="Thể Thao">
                     <label for="sport">Thể Thao</label>
-                    <input type="checkbox" name="hobby" id="web" value="web">
+                    <input type="checkbox" name="hobby[]" id="web" value="Web">
                     <label for="web">Web</label>
                 </td>
             </tr>

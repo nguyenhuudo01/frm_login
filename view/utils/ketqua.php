@@ -31,7 +31,6 @@ echo 'Địa chỉ: ' . $address . '<br>';
 echo 'Avatar: ' . $avartar . '<br>';
 echo 'Sở thích: ' . '<br>';
 var_dump($hobby)
-
 ?>
 </body>
 

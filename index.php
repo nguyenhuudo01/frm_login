@@ -14,7 +14,7 @@
         <table border="1" cellpadding="5" cellspacing="0" align="center">
             <tr>
                 <td colspan="2" align="center">
-                    <b>Đăng Ký</b>
+                    <b class="logo">đăng ký</b>
                 </td>
             </tr>
             <tr>
@@ -79,11 +79,13 @@
                     <label for="avartar">Avartar</label>
                 </td>
                 <td>
-                    <input type="file" name="avartar">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
                 </td>
             </tr>
             <tr>
-                <td><label for="hobby">Sở thích</label></td>
+                <td>
+                    <label for="hobby">Sở thích</label>
+                </td>
                 <td>
                     <input type="checkbox" name="hobby[]" id="movie" value="Xem Phim">
                     <label for="movie">Xem Phim</label>

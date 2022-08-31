@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <a class="under" href="dangky.php"> Trở lại</a> <?php
+    <form action="index.php" method="POST">
+        <div style="align-content: center;">
+            <button type="submit" olspan="2" align="center"> Trở Về</button>
+        </div> <?php
 $fullname = $_POST['fullname'];
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -19,7 +22,7 @@ $sex = $_POST['gender'];
 $date = $_POST['date'];
 $address = $_POST['address'];
 // $avartar = $_POST['avartar'];
-$hobby = implode(',', $_POST['hobby']);
+$hobby = implode(', ', $_POST['hobby']);
 
 require 'data/data.php';
 if (isset($_FILES['file'])) {
@@ -74,44 +77,45 @@ if (isset($_FILES['file'])) {
     }
 }
 
-?> <table border="1" cellpadding="5" cellspacing="0" align="center">
-        <tr>
-            <td>Full Name: </td>
-            <td colspan="2" align="center"><?php echo '' . $fullname; ?></td>
-        </tr>
-        <tr>
-            <td>User Name: </td>
-            <td colspan="2" align="center"><?php echo '' . $username; ?></td>
-        </tr>
-        <tr>
-            <td>Password: </td>
-            <td colspan="2" align="center"><?php echo '' . $password; ?></td>
-        </tr>
-        <tr>
-            <td>Repassword: </td>
-            <td colspan="2" align="center"><?php echo '' . $repassword; ?></td>
-        </tr>
-        <tr>
-            <td>Giới tính: </td>
-            <td colspan="2" align="center"><?php echo '' . $sex; ?></td>
-        </tr>
-        <tr>
-            <td>Ngày sinh: </td>
-            <td colspan="2" align="center"><?php echo '' . $date; ?></td>
-        </tr>
-        <tr>
-            <td>Địa chỉ: </td>
-            <td colspan="2" align="center"><?php echo '' . $address; ?></td>
-        </tr>
-        <tr>
-            <td>Avatar: </td>
-            <td colspan="2" align="center"><?php echo "<img src='{$upload_file}' />"; ?></td>
-        </tr>
-        <tr>
-            <td>Sở thích: </td>
-            <td colspan="2" align="center"><?php echo '' . $hobby; ?></td>
-        </tr>
-    </table>
+?> <table border=" 1" cellpadding="5" cellspacing="0" align="center">
+            <tr>
+                <td>Full Name: </td>
+                <td colspan="2" align="center"><?php echo '' . $fullname; ?></td>
+            </tr>
+            <tr>
+                <td>User Name: </td>
+                <td colspan="2" align="center"><?php echo '' . $username; ?></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td colspan="2" align="center"><?php echo '' . $password; ?></td>
+            </tr>
+            <tr>
+                <td>Repassword: </td>
+                <td colspan="2" align="center"><?php echo '' . $repassword; ?></td>
+            </tr>
+            <tr>
+                <td>Giới tính: </td>
+                <td colspan="2" align="center"><?php echo '' . $sex; ?></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh: </td>
+                <td colspan="2" align="center"><?php echo '' . $date; ?></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ: </td>
+                <td colspan="2" align="center"><?php echo '' . $address; ?></td>
+            </tr>
+            <tr>
+                <td>Avatar: </td>
+                <td colspan="2" align="center"><?php echo "<img src='{$upload_file}' />"; ?></td>
+            </tr>
+            <tr>
+                <td>Sở thích: </td>
+                <td colspan="2" align="center"><?php echo '' . $hobby; ?></td>
+            </tr>
+        </table>
+    </form>
 </body>
 
 </html>

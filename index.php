@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="fullname">Full name</label>
+                    <label for="fullname">Full name: </label>
                 </td>
                 <td>
                     <input type="text" name="fullname" id="fullname" placeholder="Nhập Fullname">
@@ -27,7 +27,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="username">Username</label>
+                    <label for="username">User name: </label>
                 </td>
                 <td>
                     <input type="text" name="username" id="username" placeholder="Nhập tên">
@@ -35,13 +35,13 @@
             </tr>
             <tr>
                 <td>
-                    <label for="password">Password</label>
+                    <label for="password">Password: </label>
                 </td>
                 <td><input type="password" name="password" id="password" placeholder="Nhập mật khẩu"></td>
             </tr>
             <tr>
                 <td>
-                    <label for="repassword">Nhập lại Password</label>
+                    <label for="repassword">Nhập lại Password: </label>
                 </td>
                 <td>
                     <input type="password" name="repassword" id="repassword" placeholder="Nhập lại Password">
@@ -49,18 +49,18 @@
             </tr>
             <tr>
                 <td>
-                    <label for="sex">Giới tính</label>
+                    <label for="sex">Giới tính: </label>
                 </td>
                 <td>
-                    <input type="radio" name="gender" value="Nam">
+                    <input type="radio" name="gender" id="sex" value="Nam">
                     <label for="male">Nam</label>
-                    <input type="radio" name="gender" value="Nữ">
+                    <input type="radio" name="gender" id value="Nữ">
                     <label for="female">Nữ</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="date of birth">Ngày sinh</label>
+                    <label for="date of birth">Ngày sinh: </label>
                 </td>
                 <td>
                     <input type="date" name="date" id="date">
@@ -68,7 +68,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="address">Địa chỉ</label>
+                    <label for="address">Địa chỉ: </label>
                 </td>
                 <td>
                     <textarea name="address" id="address" cols="25" rows="3"></textarea>
@@ -76,23 +76,23 @@
             </tr>
             <tr>
                 <td>
-                    <label for="avartar">Avartar</label>
+                    <label for="avartar">Avartar: </label>
                 </td>
                 <td>
-                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="file" name="file" id="file" id="avartar">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="hobby">Sở thích</label>
+                    <label for="hobby">Sở thích: </label>
                 </td>
                 <td>
                     <input type="checkbox" name="hobby[]" id="movie" value="Xem Phim">
-                    <label for="movie">Xem Phim</label>
+                    <label for="Xem Phim">Xem Phim</label>
                     <input type="checkbox" name="hobby[]" id="sport" value="Thể Thao">
-                    <label for="sport">Thể Thao</label>
+                    <label for="Thể Thao">Thể Thao</label>
                     <input type="checkbox" name="hobby[]" id="web" value="Web">
-                    <label for="web">Web</label>
+                    <label for="Web">Web</label>
                 </td>
             </tr>
             <tr>

@@ -21,7 +21,6 @@ $repassword = $_POST['repassword'];
 $sex = $_POST['gender'];
 $date = $_POST['date'];
 $address = $_POST['address'];
-// $avartar = $_POST['avartar'];
 $hobby = implode(', ', $_POST['hobby']);
 
 require 'data/data.php';
@@ -49,7 +48,6 @@ if (isset($_FILES['file'])) {
 
     #Kiểm tra  trùng tên file trên hệ thống
     if (file_exists($upload_file)) {
-        //============
         //-Xử lý đổi tên file tự động
         #1.Tạo File mới
         //tên file.Đuôi file

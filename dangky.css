@@ -1,9 +1,13 @@
 body {
   font-size: 16px;
+  background: #f5f3f3;
 }
 
 .logo {
   text-transform: capitalize;
+}
+table {
+  background: white;
 }
 
 table,
